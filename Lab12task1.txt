@@ -1,0 +1,18 @@
+101 ?- travel('Dammam', 'Madinah', P).
+P = ['Dammam', 'Al-Qatif', 'Madinah'] ;
+false.
+
+102 ?- travel('Riyadh', 'Makkah', P).
+P = ['Riyadh', 'Dammam', 'Al-Qatif', 'Madinah', 'Makkah'] ;
+false.
+
+103 ?- travel('Makkah', 'Riyadh', P).
+P = ['Makkah', 'Madinah', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Madinah', 'Tabuk', 'Taif', 'Dammam', 'Riyadh'] ;
+P = ['Makkah', 'Riyadh'] ;
+false.
+
+104 ?- travel('Makkah', 'Madinah', P).
+P = ['Makkah', 'Madinah'] ;
+P = ['Makkah', 'Riyadh', 'Dammam', 'Al-Qatif', 'Madinah'] ;
+false.
